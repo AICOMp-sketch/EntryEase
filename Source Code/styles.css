@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    background: linear-gradient(to right, #f0f4f8, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Keep content vertically centered */
+    align-items: center; /* Center horizontally if needed */
+    transition: all 0.3s ease;
+  }
+
+  /* Hidden class to toggle visibility without affecting layout */
+  .hidden {
+    display: none;
+  }
+
+  /* Separator line between panels */
+  .separator {
+    width: 1px;
+    background-color: #e0e0e0;
+  }
+
+  /* Styles for headings */
+  h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* Input styles */
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Links and small text below forms */
+  .form-links {
+    margin-top: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Additional links (like "Create Account" and "Already have an account") positioned below buttons */
+  .bottom-link {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Social buttons styling */
+  .social-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .social-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .social-btn:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+    .separator {
+      display: none;
+    }
+  }
